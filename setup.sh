@@ -3,6 +3,7 @@ set -e
 if (( $(id -u) == 0 )); then
     echo "Script is running as root"
 else
+    echo "Script should be run as root"
     exit
 fi
 cd
